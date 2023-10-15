@@ -1,8 +1,9 @@
 //
-//  Jarvis.h
+//  CodableManagedObject.swift
 //  Jarvis
 //
 //  Created by Jason Anderson on 10/14/23.
+//  Copyright © 2023 Kosoku Interactive, LLC. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -16,14 +17,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import <Foundation/Foundation.h>
+import CoreData
 
-//! Project version number for Jarvis.
-FOUNDATION_EXPORT double JarvisVersionNumber;
-
-//! Project version string for Jarvis.
-FOUNDATION_EXPORT const unsigned char JarvisVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Jarvis/PublicHeader.h>
-
-
+public protocol CodableManagedObject: Codable, DecoderUpdatable {
+    associatedtype EntityClass: NSManagedObject
+}

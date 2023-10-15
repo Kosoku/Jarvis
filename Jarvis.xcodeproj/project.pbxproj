@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74768BF22ADB19F100C0EABB /* Jarvis.docc in Sources */ = {isa = PBXBuildFile; fileRef = 74768BF12ADB19F100C0EABB /* Jarvis.docc */; };
 		74768BF82ADB19F100C0EABB /* Jarvis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74768BED2ADB19F100C0EABB /* Jarvis.framework */; };
 		74768BFD2ADB19F100C0EABB /* JarvisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74768BFC2ADB19F100C0EABB /* JarvisTests.swift */; };
 		74768BFE2ADB19F100C0EABB /* Jarvis.h in Headers */ = {isa = PBXBuildFile; fileRef = 74768BF02ADB19F100C0EABB /* Jarvis.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74768C0E2ADB1FB300C0EABB /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74768C0D2ADB1FB300C0EABB /* FetchRequest.swift */; };
+		74768C112ADB28AD00C0EABB /* Feige in Frameworks */ = {isa = PBXBuildFile; productRef = 74768C102ADB28AD00C0EABB /* Feige */; };
+		74768C132ADB2B9E00C0EABB /* CodableManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74768C122ADB2B9E00C0EABB /* CodableManagedObject.swift */; };
+		74768C152ADB2BE800C0EABB /* DecoderUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74768C142ADB2BE800C0EABB /* DecoderUpdatable.swift */; };
+		74ABF1C52ADC5ABC0035D24F /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABF1C42ADC5ABC0035D24F /* NSManagedObjectContext+Extensions.swift */; };
+		74ABF1C72ADC73B70035D24F /* CodingUserInfoKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABF1C62ADC73B70035D24F /* CodingUserInfoKey+Extensions.swift */; };
+		74ABF1C92ADC7C160035D24F /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABF1C82ADC7C160035D24F /* JSONDecoder+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +32,15 @@
 /* Begin PBXFileReference section */
 		74768BED2ADB19F100C0EABB /* Jarvis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jarvis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74768BF02ADB19F100C0EABB /* Jarvis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jarvis.h; sourceTree = "<group>"; };
-		74768BF12ADB19F100C0EABB /* Jarvis.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Jarvis.docc; sourceTree = "<group>"; };
 		74768BF72ADB19F100C0EABB /* JarvisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JarvisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74768BFC2ADB19F100C0EABB /* JarvisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarvisTests.swift; sourceTree = "<group>"; };
+		74768C0B2ADB1EDC00C0EABB /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		74768C0D2ADB1FB300C0EABB /* FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequest.swift; sourceTree = "<group>"; };
+		74768C122ADB2B9E00C0EABB /* CodableManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableManagedObject.swift; sourceTree = "<group>"; };
+		74768C142ADB2BE800C0EABB /* DecoderUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderUpdatable.swift; sourceTree = "<group>"; };
+		74ABF1C42ADC5ABC0035D24F /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		74ABF1C62ADC73B70035D24F /* CodingUserInfoKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodingUserInfoKey+Extensions.swift"; sourceTree = "<group>"; };
+		74ABF1C82ADC7C160035D24F /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74768C112ADB28AD00C0EABB /* Feige in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +66,7 @@
 		74768BE32ADB19F100C0EABB = {
 			isa = PBXGroup;
 			children = (
+				74768C0B2ADB1EDC00C0EABB /* Package.swift */,
 				74768BEF2ADB19F100C0EABB /* Jarvis */,
 				74768BFB2ADB19F100C0EABB /* JarvisTests */,
 				74768BEE2ADB19F100C0EABB /* Products */,
@@ -72,7 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				74768BF02ADB19F100C0EABB /* Jarvis.h */,
-				74768BF12ADB19F100C0EABB /* Jarvis.docc */,
+				74768C0D2ADB1FB300C0EABB /* FetchRequest.swift */,
+				74768C122ADB2B9E00C0EABB /* CodableManagedObject.swift */,
+				74768C142ADB2BE800C0EABB /* DecoderUpdatable.swift */,
+				74ABF1C42ADC5ABC0035D24F /* NSManagedObjectContext+Extensions.swift */,
+				74ABF1C62ADC73B70035D24F /* CodingUserInfoKey+Extensions.swift */,
+				74ABF1C82ADC7C160035D24F /* JSONDecoder+Extensions.swift */,
 			);
 			path = Jarvis;
 			sourceTree = "<group>";
@@ -113,6 +132,9 @@
 			dependencies = (
 			);
 			name = Jarvis;
+			packageProductDependencies = (
+				74768C102ADB28AD00C0EABB /* Feige */,
+			);
 			productName = Jarvis;
 			productReference = 74768BED2ADB19F100C0EABB /* Jarvis.framework */;
 			productType = "com.apple.product-type.framework";
@@ -142,11 +164,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = JAR;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Kosoku Interactive, LLC";
 				TargetAttributes = {
 					74768BEC2ADB19F100C0EABB = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					74768BF62ADB19F100C0EABB = {
 						CreatedOnToolsVersion = 15.0;
@@ -162,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 74768BE32ADB19F100C0EABB;
+			packageReferences = (
+				74768C0F2ADB28AD00C0EABB /* XCRemoteSwiftPackageReference "Feige" */,
+			);
 			productRefGroup = 74768BEE2ADB19F100C0EABB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,7 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74768BF22ADB19F100C0EABB /* Jarvis.docc in Sources */,
+				74768C0E2ADB1FB300C0EABB /* FetchRequest.swift in Sources */,
+				74ABF1C72ADC73B70035D24F /* CodingUserInfoKey+Extensions.swift in Sources */,
+				74768C152ADB2BE800C0EABB /* DecoderUpdatable.swift in Sources */,
+				74768C132ADB2B9E00C0EABB /* CodableManagedObject.swift in Sources */,
+				74ABF1C92ADC7C160035D24F /* JSONDecoder+Extensions.swift in Sources */,
+				74ABF1C52ADC5ABC0035D24F /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +378,7 @@
 		74768C022ADB19F100C0EABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -356,26 +390,35 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.Jarvis;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
 		74768C032ADB19F100C0EABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -387,26 +430,34 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosoku.Jarvis;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
 		74768C052ADB19F100C0EABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74KPPW2K35;
@@ -423,6 +474,7 @@
 		74768C062ADB19F100C0EABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74KPPW2K35;
@@ -467,6 +519,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74768C0F2ADB28AD00C0EABB /* XCRemoteSwiftPackageReference "Feige" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kosoku/Feige.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74768C102ADB28AD00C0EABB /* Feige */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74768C0F2ADB28AD00C0EABB /* XCRemoteSwiftPackageReference "Feige" */;
+			productName = Feige;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74768BE42ADB19F100C0EABB /* Project object */;
 }
