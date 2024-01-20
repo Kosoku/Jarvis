@@ -22,6 +22,12 @@ import PackageDescription
 
 let package = Package(
     name: "Jarvis",
+    platforms: [
+        .iOS(.v14),
+        .macOS(.v11),
+        .tvOS(.v13),
+        .watchOS(.v5),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -30,17 +36,18 @@ let package = Package(
     ],
     dependencies: [
             // other dependencies
-            .package(url: "https://github.com/Kosoku/Feige", from: "2.2.0"),
+            .package(url: "https://github.com/Kosoku/Feige", from: "2.2.1"),
         ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Jarvis",
+            dependencies: ["Feige"],
 			path: "Jarvis"),
         .testTarget(
             name: "JarvisTests",
-            dependencies: ["Jarvis"],
+            dependencies: ["Jarvis", "Feige"],
 			path: "JarvisTests"),
     ]
 )

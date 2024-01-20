@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Feige",
+        "repositoryURL": "https://github.com/Kosoku/Feige",
+        "state": {
+          "branch": null,
+          "revision": "eafd6fa0e7b233f92edb771f58320c9bc15cb168",
+          "version": "2.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
